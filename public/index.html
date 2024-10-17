@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book My Show</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Book My Show</h1>
+        <nav>
+            <ul>
+                <li><a href="#">MOVIES</a></li>
+                <li><a href="#">COMEDY</a></li>
+                <li><a href="#">PODCAST</a></li>
+                <li><a href="#">SHOWS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Select Theater</h2>
+        <select id="theater-select">
+            <option value="">Select a Theater</option>
+            <option value="1">Theater A</option>
+            <option value="2">Theater B</option>
+        </select>
+        
+        <h2>Select Genre</h2>
+        <select id="genre-select" disabled>
+            <option value="">Select a Genre</option>
+            <option value="Action">Action</option>
+            <option value="Crime">Crime</option>
+            <option value="Science Fiction">Science Fiction</option>
+        </select>
+
+        <h2>Available Movies</h2>
+        <div id="movies-container"></div>
+
+        <h2>Select Showtime</h2>
+        <div id="showtime-container"></div>
+
+        <h2>Ticket Details</h2>
+        <label for="seat-count">Number of Seats:</label>
+        <input type="number" id="seat-count" value="1" min="1" disabled />
+
+         <div id="ticket-details"></div>
+        
+        <button id="submit-button" disabled>Book Ticket</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Bookings</h2>
+        <div id="bookings-container"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', async function() {
+            const token = localStorage.getItem('token');
+            const response = await fetch('http://localhost:3001/api/bookings', {
+                headers: { 'Authorization': `Bearer ${token}` }
+            });
+
+            const bookings = await response.json();
+            const bookingsContainer = document.getElementById('bookings-container');
+            bookingsContainer.innerHTML = bookings.map(booking => `
+                <p>Booking ID: ${booking.id} | Movie: ${booking.movie_id} | Theater: ${booking.theater_id} | Seats: ${booking.number_of_seats}</p>
+            `).join('');
+        });
+    </script>
+</body>
+</html>

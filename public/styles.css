@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+     padding: 20px;
+    }
+    
+    header {
+     background: #0f1011;
+     color: #fff;
+     padding: 20px;
+     text-align: center;
+     border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    nav ul {
+     list-style-type: none;
+     padding: 0;
+    }
+    
+    nav ul li {
+     display: inline;
+     margin: 0 15px;
+    }
+    
+    nav ul li a {
+     color: #fff;
+     text-decoration: none;
+     font-weight: bold;
+    }
+    
+    .container {
+     max-width: 600px;
+     margin: 40px auto;
+     padding: 20px;
+     background: #fff;
+     border-radius: 8px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+     margin: 20px 0 10px;
+     color: #121213;
+    }
+    
+    select, input[type="number"], button {
+     width: 100%;
+     padding: 12px;
+     margin-bottom: 20px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     font-size: 16px;
+    }
+    
+    button {
+     background-color: #64a4ee;
+     color: white;
+     font-size: 16px;
+     border: none;
+     cursor: pointer;
+     transition: background-color 0.3s;
+    }
+    
+    button:disabled {
+     background-color: #6c757d;
+    }
+    
+    #movies-container, #showtime-container, #ticket-details {
+     margin: 10px 0;
+     padding: 10px;
+     border: 1px solid #ccc;
+    border-radius: 4px;
+     background: #f9f9f9;
+    }
+    
+    /* Specific styles for the number of tickets input */
+    #seat-count {
+     width: 50%; /* Adjust the width to make it shorter */
+     display: inline-block; /* Allows for alignment with the label */
+     padding: 8px; /* Adjust padding for better appearance */	
+    }
+    
